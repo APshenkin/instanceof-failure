@@ -1,6 +1,6 @@
 # instanceof-failure
 
-Just a simple example of failed `instanceof` check when different filename cases are used in `imports`.
+Just a simple example of failed `instanceof` check when different filename letter cases are used in `imports`.
 
 Repoduced on Mac OS.
 
