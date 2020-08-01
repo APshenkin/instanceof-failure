@@ -1,0 +1,17 @@
+{
+  "name": "instanceof-failure",
+  "version": "1.0.0",
+  "description": "instanceof-failure",
+  "main": "app.js",
+  "scripts": {
+    "start": "npm run clean && npm run build && node ./dist/app",
+    "build": "npm run clean && tsc -p ./tsconfig.json",
+    "clean": "rimraf dist types"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@types/node": "^12.12.6",
+    "typescript": "^3.9.7",
+    "rimraf": "^3.0.2"
+  }
+}
