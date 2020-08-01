@@ -10,3 +10,12 @@ But in `app.js` it will be imported with lowercase letters and in `data.js` it w
 
 In `app.js` we create instance of error from `error.js` and pass it to Data instance.
 In Data instance we try to check `instanceof`  but it will fail. BTW if you fix import (it should equal with `app.js` import) then `instanceof` check will pass.
+
+Just run code with `npm start` and see in logs:
+
+```js
+service check Error1 true
+service check Error true
+data check Error1 false
+data check Error true
+```
