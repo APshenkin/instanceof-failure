@@ -1,10 +1,12 @@
-import { Error1 } from './Errors';
+const { Error1 } = require('./Errors');
 
-export default class Data {
-  on(handler: (req: any) => any) {
-    const res = handler({});
+class Data {
+  on(handler) {
+    const res = handler();
 
     console.log('data check Error1', res instanceof Error1);
     console.log('data check Error', res instanceof Error);
   }
 }
+
+module.exports = Data
